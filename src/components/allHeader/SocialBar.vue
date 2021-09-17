@@ -40,7 +40,7 @@ export default {
 <style scoped lang="scss">
 @import "@/assets/scss/style.scss";
 #social-bar {
-  color: $color-text;
+  color: $color-text-social;
   div {
     ul {
       padding-left: 0px;
@@ -63,7 +63,7 @@ export default {
       margin-left: 20px;
       margin-right: 20px;
       i {
-        color: $color-text;
+        color: $color-text-social;
       }
     }
   }

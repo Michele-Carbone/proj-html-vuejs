@@ -5,7 +5,7 @@
       <img :src="logo" alt="Logo" class="m-3" />
     </div>
 
-    <NavbarMenu />
+    <NavbarMenu :links="links" />
   </div>
 </template>
 
@@ -21,6 +21,38 @@ export default {
   data() {
     return {
       logo: require("@/assets/images/avada-food-logo-2x.png"),
+      links: [
+        {
+          text: "Home",
+          url: "#",
+          current: true,
+        },
+        {
+          text: "Recipes",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Places",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Blog",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "About",
+          url: "#",
+          current: false,
+        },
+        {
+          text: "Contact",
+          url: "#",
+          current: false,
+        },
+      ],
     };
   },
 };
